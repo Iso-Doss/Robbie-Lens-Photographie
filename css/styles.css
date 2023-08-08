@@ -1,26 +1,37 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-a, p, li {
+a,
+p,
+li {
     font-family: 'Manrope', sans-serif;
 }
 
+.couleur-principale {
+    color: #a5b4fc;
+}
+
 /* BODY */
-/* body{
-    
-} */
+body {
+    margin: 0;
+}
 
 
 /* HEADER */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     margin: 30px 30px 0px 5%;
 }
 
-header ul{
+header ul {
     display: flex;
 }
 
@@ -35,6 +46,70 @@ header ul li {
     margin-right: 15px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline;
+}
+
+/* MAIN */
+
+/* SCETION : A PROPOS DE MOI */
+.a-propos-de-moi {
+    background-color: #1f2039;
+    padding: 100px 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a-propos-de-moi div { 
+    width: 47%;
+}
+
+.a-propos-de-moi h1 {
+    color: #a5b4fc;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 30px;
+    font-weight: 500;
+}
+
+.a-propos-de-moi p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contactez-moi{
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.a-propos-de-moi img {
+    width: 100%;
+}
+
+/* MON DERNIER PROJET */
+.dernier-projet {
+    padding: 70px 235px;
+}
+
+.dernier-projet h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-bottom: 70px;
+}
+
+.images-dernier-projet{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images-dernier-projet img {
+    width: 32%;
+    margin-bottom: 10px;
 }
