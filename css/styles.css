@@ -9,7 +9,8 @@ h6 {
 
 a,
 p,
-li {
+li,
+label {
     font-family: 'Manrope', sans-serif;
 }
 
@@ -112,4 +113,115 @@ header ul li {
 .images-dernier-projet img {
     width: 32%;
     margin-bottom: 10px;
+}
+
+/* SECTION : CONTACTEZ MOI */
+
+.contactez-moi-conteneur{
+    background-color: #1f2039;
+    padding: 100px 235px;
+    /* display: flex;
+    justify-content: space-between; */
+    color: white;
+}
+
+.contactez-moi-conteneur h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-bottom: 70px;
+    color: #a5b4fc;
+}
+
+.contactez-moi-conteneur form{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.nom-email{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nom-prenoms, .email, .message{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.message{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Manrope', sans-serif;
+}
+
+input{
+    height: 35px;
+}
+
+.soumettre-formulaire{
+    text-align: center;
+}
+
+input[type='submit']{
+    text-transform: uppercase;
+    /* text-align: center; */
+    background: linear-gradient(#8e86b5, #acaeed);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+/* SCETION : TARIFS */
+.tarifs {
+    background-color: #1f2039;
+    padding: 50px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.tarifs h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-bottom: 70px;
+}
+.tarifs table{
+    width: 100%;
+}
+
+.tarifs table, .tarifs tr, .tarifs td, .tarifs th {
+    /* width: 100%; */
+    border: 1px solid #a5b4fc;
+    border-collapse: collapse;
+}
+.tarifs th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tarifs td {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px 10px 5%;
+}
+
+footer a{
+    text-decoration: none;
 }
