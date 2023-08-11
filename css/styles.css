@@ -61,7 +61,7 @@ header ul li {
     justify-content: space-between;
 }
 
-.a-propos-de-moi div { 
+.a-propos-de-moi div {
     width: 47%;
 }
 
@@ -79,7 +79,7 @@ header ul li {
     font-size: 1.1em;
 }
 
-.contactez-moi{
+.contactez-moi {
     background: linear-gradient(#8e86b5, #acaeed);
     color: white;
     padding: 10px 20px;
@@ -96,14 +96,14 @@ header ul li {
     padding: 70px 235px;
 }
 
-.dernier-projet h2{
+.dernier-projet h2 {
     text-align: center;
     font-weight: normal;
     font-size: 1.1em;
     margin-bottom: 70px;
 }
 
-.images-dernier-projet{
+.images-dernier-projet {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +117,7 @@ header ul li {
 
 /* SECTION : CONTACTEZ MOI */
 
-.contactez-moi-conteneur{
+.contactez-moi-conteneur {
     background-color: #1f2039;
     padding: 100px 235px;
     /* display: flex;
@@ -125,7 +125,7 @@ header ul li {
     color: white;
 }
 
-.contactez-moi-conteneur h2{
+.contactez-moi-conteneur h2 {
     text-align: center;
     font-weight: normal;
     font-size: 1.1em;
@@ -133,42 +133,45 @@ header ul li {
     color: #a5b4fc;
 }
 
-.contactez-moi-conteneur form{
+.contactez-moi-conteneur form {
     width: 100%;
     /* display: flex;
     flex-direction: column; */
 }
 
-.nom-email{
+.nom-email {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.nom-prenoms, .email, .message{
+.nom-prenoms,
+.email,
+.message {
     display: flex;
     flex-direction: column;
     width: 48%;
 }
 
-.message{
+.message {
     width: 100%;
     margin-bottom: 10px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-family: 'Manrope', sans-serif;
 }
 
-input{
+input {
     height: 35px;
 }
 
-.soumettre-formulaire{
+.soumettre-formulaire {
     text-align: center;
 }
 
-input[type='submit']{
+input[type='submit'] {
     text-transform: uppercase;
     /* text-align: center; */
     background: linear-gradient(#8e86b5, #acaeed);
@@ -187,21 +190,26 @@ input[type='submit']{
     margin-bottom: 100px;
 }
 
-.tarifs h2{
+.tarifs h2 {
     text-align: center;
     font-weight: normal;
     font-size: 1.1em;
     margin-bottom: 70px;
 }
-.tarifs table{
+
+.tarifs table {
     width: 100%;
 }
 
-.tarifs table, .tarifs tr, .tarifs td, .tarifs th {
+.tarifs table,
+.tarifs tr,
+.tarifs td,
+.tarifs th {
     /* width: 100%; */
     border: 1px solid #a5b4fc;
     border-collapse: collapse;
 }
+
 .tarifs th {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -215,13 +223,115 @@ input[type='submit']{
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 30px 10px 5%;
 }
 
-footer a{
+footer a {
     text-decoration: none;
+}
+
+@media screen and (max-width : 996px) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100;
+        margin: 30px 0px 0px 0px;
+    }
+
+    header ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        color: black;
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.8em;
+    }
+
+
+    /* MAIN */
+
+    /* SCETION : A PROPOS DE MOI */
+    .a-propos-de-moi {
+        padding: 50px 0 70px 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .a-propos-de-moi div {
+        width: 100%;
+        text-align: center;
+    }
+    .a-propos-de-moi h1 {
+        color: #a5b4fc;
+        font-size: 1.5em;
+        margin-block-start: 0;
+        margin-block-end: 30px;
+        font-weight: 500;
+    }
+    
+    .a-propos-de-moi p {
+        color: white;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+    
+    .a-propos-de-moi a{
+        font-size: 0.9em;
+    }
+
+    /* MON DERNIER PROJET */
+    .dernier-projet {
+        padding: 30px 0;
+    }
+
+    .images-dernier-projet {
+        justify-content: center;
+    }
+
+    .images-dernier-projet img {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    /* SECTION : CONTACTEZ MOI */
+
+    .contactez-moi-conteneur {
+        /* background-color: #1f2039; */
+        padding: 20px 0;
+        /* color: white; */
+    }
+
+    .nom-email {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .nom-prenoms,
+    .email,
+    .message {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+
+    input[type='submit'] {
+        margin-top: 20px;
+    }
 }
